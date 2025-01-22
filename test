@@ -1,0 +1,18 @@
+#!/bin/bash
+cd ~/descargas
+chmod +x xampp
+sudo./xampp
+# Se crea /opt/lamp
+cd /opt/lampp
+# cambiar contraseña
+./lampp security
+./lampp restart
+# supuestamente /etc/lampp/proftp.conf
+# Cambiar manualmente la contraseña de ftp
+
+# Descomprimir wordpress en /opt/lampp/htdocs
+# establecer como propietario daemon de wordpress en el directorio de wordpress 
+chwon daemon:daemon wordpress
+# acceder a php my admin con root y crear el usuario wordpress con su bd
+#iniciamos la instalacion de wordpress /localhost/wordpress
+# Introducimos: bd, usuariosbd, localhost, wp-
